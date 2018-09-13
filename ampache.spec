@@ -1,7 +1,7 @@
 %define __requires_exclude ^(pear\\(Auth.*|pear\\(PHPUnit.*|pear\\(config.*)$
 
 Name:           ampache
-Version:        3.8.2
+Version:        3.8.9
 Release:        1%{?dist}
 Summary:        Web-based MP3/Ogg/RM/Flac/WMA/M4A manager
 License:        AGPLv3+
@@ -21,6 +21,10 @@ It allows you to view, edit, and play your audio files via HTTP/IceCast/Mpd
 or Moosic. It has support for downsampling, playlists, artist,
 and album views, album art, random play, song play tracking, user themes,
 and remote catalogs using XML-RPC.
+
+%changelog
+* Thu Sep 13 2018 Stephane de labrusse <stephdl@de-labrusse.fr> - 3.8.9
+- Upstream release
 
 %prep
 mkdir %{name}-%{version}
